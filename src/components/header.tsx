@@ -73,7 +73,7 @@ export function Header() {
         {/* mobile navbar */}
         <div
           id="mobile-menu"
-          className={`fixed left-0 top-0 w-full md:hidden h-2/5 bg-background-color/70 backdrop-blur-lg px-4 pt-4 transform ${
+          className={`fixed left-0 top-0 w-full md:hidden h-3/5 bg-background backdrop-blur-lg px-4 pt-4 transform ${
             menuOpen ? 'translate-y-0' : '-translate-y-[120%]'
           } transition-transform duration-200 ease-in-out`}
         >
