@@ -28,7 +28,7 @@ export function Header() {
           />
         </Link>
 
-        {/* Menu desktop sempre visível na largura md para cima */}
+        {/* desktop navbar */}
         <ul className="hidden md:flex gap-8">
           <Link href="/">
             <li className="border-y border-transparent hover:border-b-primary hover:text-primary text-lg">
@@ -70,7 +70,7 @@ export function Header() {
           </Button>
         </div>
 
-        {/* Menu mobile */}
+        {/* mobile navbar */}
         <div
           id="mobile-menu"
           className={`fixed left-0 top-0 w-full md:hidden h-2/5 bg-background-color/70 backdrop-blur-lg px-4 pt-4 transform ${
