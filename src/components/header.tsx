@@ -74,8 +74,8 @@ export function Header() {
         <div
           id="mobile-menu"
           className={`fixed left-0 top-0 w-full md:hidden h-2/5 bg-background-color/70 backdrop-blur-lg px-4 pt-4 transform ${
-            menuOpen ? 'translate-y-0' : '-translate-y-full'
-          } transition-transform duration-100 ease-in-out`}
+            menuOpen ? 'translate-y-0' : '-translate-y-[120%]'
+          } transition-transform duration-200 ease-in-out`}
         >
           <div className="flex w-full items-center justify-end">
             <Button
