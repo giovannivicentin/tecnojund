@@ -16,15 +16,19 @@ export function Header() {
 
   return (
     <div>
-      <header className="flex items-center justify-between px-4 md:px-0 md:justify-around w-full z-10 py-2">
+      <header className="flex items-center bg-background justify-between px-4 md:px-0 md:justify-around w-full z-10 py-2">
         <Link href="/">
           <Image
-            alt="Logo"
-            width="1600"
-            height="1200"
-            className="w-28 h-auto"
-            src="/logo/header-logo.svg"
+            src="/header-logo.svg"
+            alt="Logo Tecnojund"
+            width={100}
+            height={50}
+            className="cursor-pointer"
             priority
+            style={{
+              maxWidth: '100%',
+              height: 'auto',
+            }}
           />
         </Link>
 
@@ -33,11 +37,6 @@ export function Header() {
           <Link href="/">
             <li className="border-y border-transparent hover:border-b-primary hover:text-primary text-lg">
               Início
-            </li>
-          </Link>
-          <Link href="/servicos">
-            <li className="border-y border-transparent hover:border-b-primary hover:text-primary text-lg">
-              Serviços
             </li>
           </Link>
           <Link href="/chamados">
@@ -74,7 +73,7 @@ export function Header() {
         <div
           id="mobile-menu"
           className={`fixed left-0 top-0 w-full md:hidden h-3/5 bg-background backdrop-blur-lg px-4 pt-4 transform ${
-            menuOpen ? 'translate-y-0' : '-translate-y-[120%]'
+            menuOpen ? 'translate-y-0' : '-translate-y-[200%]'
           } transition-transform duration-200 ease-in-out`}
         >
           <div className="flex w-full items-center justify-end">
@@ -86,15 +85,10 @@ export function Header() {
               <Cross2Icon className="h-[1.4rem] w-[1.4rem]" />
             </Button>
           </div>
-          <ul className="flex flex-col text-center  gap-4 mt-4">
+          <ul className="flex flex-col text-center items-center justify-center  gap-4 mt-4">
             <Link href="/">
               <li className="text-lg hover:text-primary" onClick={handleNav}>
                 Início
-              </li>
-            </Link>
-            <Link href="/servicos">
-              <li className="text-lg hover:text-primary" onClick={handleNav}>
-                Serviços
               </li>
             </Link>
             <Link href="/chamados">
