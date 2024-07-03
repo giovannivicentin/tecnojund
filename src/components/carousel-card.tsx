@@ -19,9 +19,9 @@ export function CarouselCard({
       <Image
         src={src}
         alt={alt}
-        width={50}
-        height={50}
-        className="w-full aspect-video rounded-lg"
+        width={1980}
+        height={1080}
+        className="w-full aspect-video rounded-t-sm"
         style={{
           maxWidth: '100%',
           height: 'auto',

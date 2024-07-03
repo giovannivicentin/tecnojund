@@ -29,8 +29,8 @@ export function CarouselResidential() {
             <CarouselCard
               title="Segurança com CFTV"
               description="Instalamos sistemas de CFTV com ótimo custo-benefício, ideais para segurança e monitoramento remoto."
-              src="/header-logo.svg"
-              alt="adwa"
+              src="/residential/camera.jpg"
+              alt="Image of a woman looking for a tablet to see images from camera. Photo by www.freepik.com"
             />
           </div>
         </CarouselItem>
@@ -39,8 +39,8 @@ export function CarouselResidential() {
             <CarouselCard
               title="Automação Residencial"
               description="Automatize sua casa com controle remoto de luzes, tomadas, portões e alarmes pelo celular. Ganhe tempo e crie rotinas programadas."
-              src="/header-logo.svg"
-              alt="adwa"
+              src="/residential/smart-home.jpg"
+              alt="An image that have a hand clicking in smart home icon to control the house. Photo by www.freepik.com"
             />
           </div>
         </CarouselItem>
@@ -49,8 +49,8 @@ export function CarouselResidential() {
             <CarouselCard
               title="Telemetria Residencial"
               description="Monitore remotamente sua casa e acompanhe detalhadamente consumos de energia, água e temperatura. Temos diversas soluções para você!"
-              src="/header-logo.svg"
-              alt="adwa"
+              src="/residential/woman-telemetry.jpg"
+              alt="A woman using telemetry to monitor the house. Photo by www.freepik.com"
             />
           </div>
         </CarouselItem>
@@ -59,8 +59,8 @@ export function CarouselResidential() {
             <CarouselCard
               title="Assistentes Virtuais"
               description="Integramos seus dispositivos com assistentes como Siri, Alexa, Bixby e Cortana. Ideal para criar rotinas, eventos e agendamentos, completando sua casa inteligente."
-              src="/header-logo.svg"
-              alt="adwa"
+              src="/residential/alexa.jpg"
+              alt="A hand using computer and a alexa voice assistant. Photo by www.freepik.com"
             />
           </div>
         </CarouselItem>
