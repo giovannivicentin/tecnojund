@@ -44,7 +44,7 @@ export default function Home() {
         ></Image>
       </div>
       <div className="w-full flex flex-col justify-center items-center">
-        <h2 className="text-5xl font-medium">Serviços</h2>
+        <h2 className="text-5xl font-medium mb-12 md:mb-0">Serviços</h2>
         <div className="flex flex-col w-3/4 gap-20 justify-center items-center mb-24">
           <div className="w-full">
             <h3 className="text-xl md:text-3xl font-medium">Residencial</h3>
