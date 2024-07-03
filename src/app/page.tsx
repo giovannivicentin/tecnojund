@@ -17,7 +17,7 @@ export default function Home() {
         'min-h-dvh bg-background flex flex-col items-center justify-center gap-12 md:gap-36 animate-fade-up animate-once')
       }
     >
-      <div className="w-3/4 mt-12 md:mt-6 flex flex-col md:flex-row items-center justify-center gap-12 md:gap-0">
+      <div className="w-3/4 mt-12 flex flex-col md:flex-row items-center justify-center gap-12 md:gap-0">
         <div className="md:w-1/2 text-center md:text-start">
           <h1 className="text-6xl font-medium">Automação</h1>
           <h2 className="text-3xl">no tempo certo</h2>
