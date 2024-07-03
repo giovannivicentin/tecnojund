@@ -8,9 +8,9 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel'
 import Autoplay from 'embla-carousel-autoplay'
-import { CarrouselItem } from './carrousel-item'
+import { CarouselCard } from './carousel-card'
 
-export function CarrouselJobs() {
+export function CarouselBusiness() {
   return (
     <Carousel
       plugins={[
@@ -26,7 +26,7 @@ export function CarrouselJobs() {
       <CarouselContent>
         <CarouselItem className="md:basis-1/2 lg:basis-1/3">
           <div className="p-1">
-            <CarrouselItem
+            <CarouselCard
               title="awdad"
               description="aaa"
               src="/header-logo.svg"
@@ -36,7 +36,7 @@ export function CarrouselJobs() {
         </CarouselItem>
         <CarouselItem className="md:basis-1/2 lg:basis-1/3">
           <div className="p-1">
-            <CarrouselItem
+            <CarouselCard
               title="awdad"
               description="aaa"
               src="/header-logo.svg"
@@ -46,7 +46,7 @@ export function CarrouselJobs() {
         </CarouselItem>
         <CarouselItem className="md:basis-1/2 lg:basis-1/3">
           <div className="p-1">
-            <CarrouselItem
+            <CarouselCard
               title="awdad"
               description="aaa"
               src="/header-logo.svg"
@@ -56,7 +56,7 @@ export function CarrouselJobs() {
         </CarouselItem>
         <CarouselItem className="md:basis-1/2 lg:basis-1/3">
           <div className="p-1">
-            <CarrouselItem
+            <CarouselCard
               title="awdad"
               description="aaa"
               src="/header-logo.svg"
@@ -67,7 +67,7 @@ export function CarrouselJobs() {
 
         <CarouselItem className="md:basis-1/2 lg:basis-1/3">
           <div className="p-1">
-            <CarrouselItem
+            <CarouselCard
               title="awdad"
               description="aaa"
               src="/header-logo.svg"
