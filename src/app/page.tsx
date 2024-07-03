@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button'
 import { CarouselResidential } from '@/components/carousel-residential'
 import { CarouselBusiness } from '@/components/carousel-business'
 import { CarouselCondominiums } from '@/components/carousel-condominiums'
+import Link from 'next/link'
 
 const roboto = Roboto({
   weight: ['400', '500'],
@@ -29,9 +30,11 @@ export default function Home() {
             assegura integração perfeita e automação eficiente para residências
             e empresas.
           </p>
-          <Button className="text-md md:text-lg font-bold h-11 rounded-full">
-            Fale Conosco
-          </Button>
+          <Link href="/chamados">
+            <Button className="text-md md:text-lg font-bold h-11 rounded-full">
+              Fale Conosco
+            </Button>
+          </Link>
         </div>
         <Image
           alt="house with icons of automation, Iot and smart home"
