@@ -72,7 +72,7 @@ export function Header() {
         {/* mobile navbar */}
         <div
           id="mobile-menu"
-          className={`fixed left-0 top-0 w-full md:hidden h-3/5 bg-background backdrop-blur-lg px-4 pt-4 transform ${
+          className={`fixed z-50 left-0 top-0 w-full md:hidden h-3/5 bg-background backdrop-blur-lg px-4 pt-4 transform ${
             menuOpen ? 'translate-y-0' : '-translate-y-[200%]'
           } transition-transform duration-200 ease-in-out`}
         >
@@ -85,24 +85,36 @@ export function Header() {
               <Cross2Icon className="h-[1.4rem] w-[1.4rem]" />
             </Button>
           </div>
-          <ul className="flex flex-col text-center items-center justify-center  gap-4 mt-4">
+          <ul className="flex flex-col text-center items-center justify-center gap-12 mt-4">
             <Link href="/">
-              <li className="text-lg hover:text-primary" onClick={handleNav}>
+              <li
+                className="text-2xl font-medium hover:text-primary"
+                onClick={handleNav}
+              >
                 Início
               </li>
             </Link>
             <Link href="/chamados">
-              <li className="text-lg hover:text-primary" onClick={handleNav}>
+              <li
+                className="text-2xl font-medium hover:text-primary"
+                onClick={handleNav}
+              >
                 Chamados
               </li>
             </Link>
             <Link href="/portfolio">
-              <li className="text-lg hover:text-primary" onClick={handleNav}>
+              <li
+                className="text-2xl font-medium  hover:text-primary"
+                onClick={handleNav}
+              >
                 Portfólio
               </li>
             </Link>
             <Link href="/uteis">
-              <li className="text-lg hover:text-primary" onClick={handleNav}>
+              <li
+                className="text-2xl font-medium  hover:text-primary"
+                onClick={handleNav}
+              >
                 Úteis
               </li>
             </Link>
