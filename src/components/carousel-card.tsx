@@ -15,20 +15,22 @@ export function CarouselCard({
   alt,
 }: CarouselCardProps) {
   return (
-    <Card className="w-full h-80">
+    <Card className="w-full h-96 flex flex-col gap-2">
       <Image
         src={src}
         alt={alt}
         width={50}
         height={50}
-        className="w-full aspect-video h-1/2 rounded-lg"
+        className="w-full aspect-video rounded-lg"
         style={{
           maxWidth: '100%',
           height: 'auto',
         }}
       ></Image>
       <CardTitle className="px-4 text-2xl">{title}</CardTitle>
-      <CardDescription className="px-4 text-lg">{description}</CardDescription>
+      <CardDescription className="px-4 text-black dark:text-white text-sm">
+        {description}
+      </CardDescription>
     </Card>
   )
 }

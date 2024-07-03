@@ -27,8 +27,8 @@ export function CarouselResidential() {
         <CarouselItem className="md:basis-1/2 lg:basis-1/3">
           <div className="p-1">
             <CarouselCard
-              title="awdad"
-              description="aaa"
+              title="Segurança com CFTV"
+              description="Instalamos sistemas de CFTV com ótimo custo-benefício, ideais para segurança e monitoramento remoto."
               src="/header-logo.svg"
               alt="adwa"
             />
@@ -37,8 +37,8 @@ export function CarouselResidential() {
         <CarouselItem className="md:basis-1/2 lg:basis-1/3">
           <div className="p-1">
             <CarouselCard
-              title="awdad"
-              description="aaa"
+              title="Automação Residencial"
+              description="Automatize sua casa com controle remoto de luzes, tomadas, portões e alarmes pelo celular. Ganhe tempo e crie rotinas programadas."
               src="/header-logo.svg"
               alt="adwa"
             />
@@ -47,8 +47,8 @@ export function CarouselResidential() {
         <CarouselItem className="md:basis-1/2 lg:basis-1/3">
           <div className="p-1">
             <CarouselCard
-              title="awdad"
-              description="aaa"
+              title="Telemetria Residencial"
+              description="Monitore remotamente sua casa e acompanhe detalhadamente consumos de energia, água e temperatura. Temos diversas soluções para você!"
               src="/header-logo.svg"
               alt="adwa"
             />
@@ -57,19 +57,8 @@ export function CarouselResidential() {
         <CarouselItem className="md:basis-1/2 lg:basis-1/3">
           <div className="p-1">
             <CarouselCard
-              title="awdad"
-              description="aaa"
-              src="/header-logo.svg"
-              alt="adwa"
-            />
-          </div>
-        </CarouselItem>
-
-        <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-          <div className="p-1">
-            <CarouselCard
-              title="awdad"
-              description="aaa"
+              title="Assistentes Virtuais"
+              description="Integramos seus dispositivos com assistentes como Siri, Alexa, Bixby e Cortana. Ideal para criar rotinas, eventos e agendamentos, completando sua casa inteligente."
               src="/header-logo.svg"
               alt="adwa"
             />

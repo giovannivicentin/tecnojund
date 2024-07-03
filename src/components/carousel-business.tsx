@@ -27,8 +27,8 @@ export function CarouselBusiness() {
         <CarouselItem className="md:basis-1/2 lg:basis-1/3">
           <div className="p-1">
             <CarouselCard
-              title="awdad"
-              description="aaa"
+              title="Sistemas de CFTV"
+              description="Instalamos CFTV com excelente custo-benefício, reduzindo custos e aumentando a segurança em rondas e fiscalizações."
               src="/header-logo.svg"
               alt="adwa"
             />
@@ -37,8 +37,8 @@ export function CarouselBusiness() {
         <CarouselItem className="md:basis-1/2 lg:basis-1/3">
           <div className="p-1">
             <CarouselCard
-              title="awdad"
-              description="aaa"
+              title="Controle de Acesso"
+              description="Oferecemos controle de acesso para funcionários e prestadores com a qualidade e cuidado que sua empresa merece."
               src="/header-logo.svg"
               alt="adwa"
             />
@@ -47,8 +47,8 @@ export function CarouselBusiness() {
         <CarouselItem className="md:basis-1/2 lg:basis-1/3">
           <div className="p-1">
             <CarouselCard
-              title="awdad"
-              description="aaa"
+              title="Automação Personalizada"
+              description="Desenvolvemos soluções personalizadas de automação de processos e controles com CLP, Arduino ou Raspberry."
               src="/header-logo.svg"
               alt="adwa"
             />
@@ -57,8 +57,8 @@ export function CarouselBusiness() {
         <CarouselItem className="md:basis-1/2 lg:basis-1/3">
           <div className="p-1">
             <CarouselCard
-              title="awdad"
-              description="aaa"
+              title="Gerenciamento de Redes e Servidores"
+              description="Substitua vários servidores físicos por um único com segurança e economia. Gerenciamos VPN, arquivos, domínio, backup, ERP e SQL."
               src="/header-logo.svg"
               alt="adwa"
             />
@@ -68,8 +68,8 @@ export function CarouselBusiness() {
         <CarouselItem className="md:basis-1/2 lg:basis-1/3">
           <div className="p-1">
             <CarouselCard
-              title="awdad"
-              description="aaa"
+              title="Rede Estruturada"
+              description="Organizamos sua rede e racks para melhorar desempenho e economia."
               src="/header-logo.svg"
               alt="adwa"
             />
