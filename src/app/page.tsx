@@ -16,11 +16,11 @@ export default function Home() {
         'min-h-dvh bg-background flex flex-col items-center justify-center gap-12')
       }
     >
-      <div className="w-3/4 mt-6 flex flex-col md:flex-row items-center justify-center">
+      <div className="w-3/4 mt-12 md:mt-6 flex flex-col md:flex-row items-center justify-center gap-12 md:gap-0">
         <div className="md:w-1/2 text-center md:text-start">
           <h1 className="text-6xl font-medium">Automação</h1>
           <h2 className="text-3xl">no tempo certo</h2>
-          <p className="text-md mx-auto my-6 md:mx-0  w-3/4">
+          <p className="text-md mx-auto my-6 md:mx-0 md:w-3/4">
             A Tecnojund oferece soluções de automação de ponta com equipamentos
             de alta qualidade, como Arduino e Microchip. Nossa experiência
             assegura integração perfeita e automação eficiente para residências
