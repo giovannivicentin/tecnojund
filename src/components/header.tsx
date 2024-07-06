@@ -49,9 +49,9 @@ export function Header() {
               Portfólio
             </li>
           </Link>
-          <Link href="/uteis">
+          <Link href="/downloads">
             <li className="border-y border-transparent hover:border-b-primary hover:text-primary text-lg">
-              Úteis
+              Downloads
             </li>
           </Link>
         </ul>
@@ -110,12 +110,12 @@ export function Header() {
                 Portfólio
               </li>
             </Link>
-            <Link href="/uteis">
+            <Link href="/downloads">
               <li
                 className="text-2xl font-medium  hover:text-primary"
                 onClick={handleNav}
               >
-                Úteis
+                Downloads
               </li>
             </Link>
           </ul>
