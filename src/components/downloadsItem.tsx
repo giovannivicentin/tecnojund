@@ -2,21 +2,24 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 type DownloadsItemProps = {
-  downloadDetails: {
-    href: string
-    name: string
-    imageSrc: string
-    imageAlt: string
-  }
+  href: string
+  name: string
+  imageSrc: string
+  imageAlt: string
 }
 
-export function DownloadsItem({ downloadDetails }: DownloadsItemProps) {
+export function DownloadsItem({
+  href,
+  name,
+  imageSrc,
+  imageAlt,
+}: DownloadsItemProps) {
   return (
-    <Link href={downloadDetails.href}>
-      <div className="w-full bg-primary flex flex-col justify-center md:h-80 items-center gap-2 p-2 rounded-2xl cursor-pointer hover:bg-gradient-to-r hover:from-primary hover:to-primary/90 hover:scale-105  hover:shadow-2xl transition-all duration-300">
+    <Link href={href}>
+      <div className="w-full bg-primary flex flex-col justify-center md:h-80 items-center gap-2 p-2 rounded-2xl cursor-pointer hover:bg-gradient-to-r hover:from-primary hover:to-primary/90 hover:scale-105 hover:shadow-2xl transition-all duration-300">
         <Image
-          src={downloadDetails.imageSrc}
-          alt={downloadDetails.imageAlt}
+          src={imageSrc}
+          alt={imageAlt}
           width={200}
           height={200}
           style={{
@@ -25,7 +28,7 @@ export function DownloadsItem({ downloadDetails }: DownloadsItemProps) {
           }}
         />
         <h2 className="text-xl font-medium text-white md:text-3xl text-center">
-          {downloadDetails.name}
+          {name}
         </h2>
       </div>
     </Link>
