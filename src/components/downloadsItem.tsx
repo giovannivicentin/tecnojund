@@ -13,7 +13,7 @@ type DownloadsItemProps = {
 export function DownloadsItem({ downloadDetails }: DownloadsItemProps) {
   return (
     <Link href={downloadDetails.href}>
-      <div className="w-full bg-primary flex flex-col justify-center md:h-80 items-center gap-2 p-2 rounded-2xl cursor-pointer">
+      <div className="w-full bg-primary flex flex-col justify-center md:h-80 items-center gap-2 p-2 rounded-2xl cursor-pointer hover:bg-gradient-to-r hover:from-primary hover:to-primary/90 hover:scale-105  hover:shadow-2xl transition-all duration-300">
         <Image
           src={downloadDetails.imageSrc}
           alt={downloadDetails.imageAlt}
