@@ -32,7 +32,7 @@ export default function Home() {
           </p>
           <Link href="/chamados">
             <Button className="text-md md:text-lg font-bold h-11 rounded-full">
-              Fale Conosco
+              Abrir Chamado
             </Button>
           </Link>
         </div>
