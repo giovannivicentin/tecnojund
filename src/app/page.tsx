@@ -17,10 +17,10 @@ export default function Home() {
     <div
       className={
         (roboto.className,
-        'min-h-dvh bg-background flex flex-col items-center justify-center gap-12 animate-fade-up animate-once')
+        'min-h-dvh bg-background flex flex-col items-center gap-12 animate-fade-up animate-once')
       }
     >
-      <div className="w-3/4 md:h-dvh mt-24 md:mt-0 flex flex-col md:flex-row items-center justify-center gap-12 md:gap-0">
+      <div className="w-3/4 md:h-dvh mt-24 md:mt-0 flex flex-col md:flex-row items-center gap-12 md:gap-0">
         <div className="md:w-1/2 text-center md:text-start">
           <h1 className="text-6xl font-medium">Automação</h1>
           <h2 className="text-3xl">no tempo certo</h2>
