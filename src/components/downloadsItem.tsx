@@ -27,7 +27,7 @@ export function DownloadsItem({
             height: 'auto',
           }}
         />
-        <h2 className="text-xl font-medium text-white md:text-3xl text-center">
+        <h2 className="text-xl font-medium text-white md:text-2xl text-center">
           {name}
         </h2>
       </div>
