@@ -31,7 +31,7 @@ export default function Home() {
             e empresas.
           </p>
           <Link href="/chamados">
-            <Button className="text-md lg:text-lg font-bold h-11 rounded-full">
+            <Button className="text-md text-white  lg:text-lg font-bold h-11 rounded-full">
               Abrir Chamado
             </Button>
           </Link>
