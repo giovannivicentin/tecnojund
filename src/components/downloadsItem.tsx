@@ -16,7 +16,7 @@ export function DownloadsItem({
 }: DownloadsItemProps) {
   return (
     <Link href={href}>
-      <div className="w-full bg-primary flex flex-col hover:underline text-white dark:text-background justify-center md:h-48 items-center gap-2 p-2 rounded-2xl cursor-pointer hover:bg-gradient-to-r hover:from-primary hover:to-primary/90 hover:scale-105 hover:shadow-2xl transition-all duration-300">
+      <div className="w-full border-2 flex flex-col hover:underline text-black hover:text-primary hover:dark:text-primary dark:text-white justify-center md:h-48 items-center gap-2 p-2 rounded-2xl cursor-pointer hover:bg-gradient-to-r dark:hover:from-primary-foreground hover:from-background hover:to-slate-50 dark:hover:to-background hover:scale-105 hover:shadow-2xl transition-all duration-300">
         <Image
           src={imageSrc}
           alt={imageAlt}
@@ -26,9 +26,9 @@ export function DownloadsItem({
             maxWidth: '100%',
             height: 'auto',
           }}
-          className="invert dark:invert-0"
+          className="dark:invert"
         />
-        <h2 className="text-xl font-medium md:text-2xl text-center">{name}</h2>
+        <h2 className="text-xl font-medium text-center">{name}</h2>
       </div>
     </Link>
   )
