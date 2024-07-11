@@ -65,14 +65,14 @@ export function Header() {
             aria-controls="mobile-menu"
             aria-expanded={menuOpen}
           >
-            <HamburgerMenuIcon className="h-[1.2rem] w-[1.2rem]" />
+            <HamburgerMenuIcon className="h-[1.4rem] w-[1.4rem]" />
           </Button>
         </div>
 
         {/* mobile navbar */}
         <div
           id="mobile-menu"
-          className={`fixed z-50 left-0 top-0 w-full md:hidden h-3/5 bg-background backdrop-blur-lg px-4 pt-4 transform ${
+          className={`fixed z-50 left-0 top-0 w-full md:hidden h-3/5 bg-background backdrop-blur-lg px-4 pt-4 transform border-b border-muted ${
             menuOpen ? 'translate-y-0' : '-translate-y-[200%]'
           } transition-transform duration-200 ease-in-out`}
         >
