@@ -8,12 +8,14 @@ export async function POST(request: Request) {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: 'onboarding@resend.dev',
+      from: 'chamado@tecnojund.com.br',
       reply_to: email,
       cc: email,
       to: 'chamado@tecnojund.com.br',
-      subject: `De ${email}: ${subject}`,
-      html: `<p>Email de: ${name} (${email})</p><p>${message}</p>`,
+      subject: `${subject}`,
+      html: `<h1>Email enviado por: ${name}</h1>
+             <h2>Endereço de email: ${email}</h2>
+             <div>${message}</div>`,
     })
 
     if (error) {
