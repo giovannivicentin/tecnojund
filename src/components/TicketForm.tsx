@@ -3,6 +3,7 @@
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
+import { toast } from 'sonner'
 
 import { Button } from '@/components/ui/button'
 import {
@@ -17,6 +18,8 @@ import {
 import { Input } from '@/components/ui/input'
 import { Textarea } from './ui/textarea'
 import { useState } from 'react'
+import { Toaster } from './ui/sonner'
+import { PassThrough } from 'stream'
 
 const formSchema = z.object({
   name: z.string().min(1, { message: 'O nome é obrigatório.' }),
@@ -55,6 +58,13 @@ export function TicketForm() {
 
       if (response.status === 200) {
         form.reset()
+        toast('Chamado criado com sucesso!', {
+          description: `Chamado #${ticketCode} foi criado.`,
+          action: {
+            label: 'Fechar',
+            onClick: () => PassThrough,
+          },
+        })
       } else {
         throw new Error(
           `Falha ao enviar o formulário: Status ${response.status}`,
@@ -62,7 +72,15 @@ export function TicketForm() {
       }
     } catch (error) {
       console.error('Erro ao enviar o formulário:', error)
-      // Aqui você pode definir um estado para mostrar a mensagem de erro para o usuário
+      const errorMessage =
+        error instanceof Error ? error.message : 'Unknown error'
+      toast('Erro ao enviar o chamado', {
+        description: errorMessage,
+        action: {
+          label: 'Tentar novamente',
+          onClick: () => PassThrough,
+        },
+      })
     }
   }
 
@@ -142,6 +160,7 @@ export function TicketForm() {
         />
         <Button type="submit">Enviar</Button>
       </form>
+      <Toaster />
     </Form>
   )
 }
