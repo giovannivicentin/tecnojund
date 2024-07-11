@@ -16,6 +16,7 @@ import {
 } from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
 import { Textarea } from './ui/textarea'
+import { useState } from 'react'
 
 const formSchema = z.object({
   name: z.string().min(1, { message: 'O nome é obrigatório.' }),
@@ -37,15 +38,39 @@ export function TicketForm() {
     },
   })
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values)
+  const [ticketCode] = useState(() =>
+    Math.floor(100000 + Math.random() * 900000),
+  )
+
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      const enhancedSubject = `Chamado: ${ticketCode} - ${values.subject}`
+      const response = await fetch('/api/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ ...values, subject: enhancedSubject }),
+      })
+
+      if (response.status === 200) {
+        form.reset()
+      } else {
+        throw new Error(
+          `Falha ao enviar o formulário: Status ${response.status}`,
+        )
+      }
+    } catch (error) {
+      console.error('Erro ao enviar o formulário:', error)
+      // Aqui você pode definir um estado para mostrar a mensagem de erro para o usuário
+    }
   }
 
   return (
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="space-y-3 w-3/4 md:w-1/4"
+        className="space-y-3 w-3/4 md:1/5 lg:w-1/4"
       >
         <FormField
           control={form.control}
