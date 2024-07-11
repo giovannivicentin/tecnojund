@@ -5,7 +5,7 @@ export default function Downloads() {
     <div className="bg-background h-dvh flex justify-center items-start">
       <div className="flex flex-col justify-center items-center gap-12 mt-12 w-full px-4">
         <h1 className="font-medium text-4xl text-center">Downloads</h1>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-lg md:max-w-5xl mb-24">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-lg md:max-w-3xl mb-24">
           <DownloadsItem
             href="/downloads/team-viewer.exe"
             name="Team Viewer"
