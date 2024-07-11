@@ -13,7 +13,7 @@ export async function POST(request: Request) {
       cc: email,
       to: 'chamado@tecnojund.com.br',
       subject: `${subject}`,
-      html: `<h1>Email enviado por: ${name}</h1>
+      html: `<h1>E-mail enviado por: ${name}</h1>
              <h2>Endereço de email: ${email}</h2>
              <div>${message}</div>`,
     })
