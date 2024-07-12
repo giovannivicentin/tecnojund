@@ -17,7 +17,7 @@ export default function Home() {
     <div
       className={
         (roboto.className,
-        'min-h-dvh bg-background flex flex-col items-center justify-center gap-12 animate-fade-up animate-once')
+        'min-h-dvh bg-background flex flex-col items-center justify-center animate-fade-up animate-once')
       }
     >
       <div className="w-3/4 lg:h-[90dvh] mt-24 lg:mt-0 flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-0">
