@@ -5,6 +5,7 @@ import './globals.css'
 import { Header } from '@/components/header'
 import { ThemeProvider } from 'next-themes'
 import WhatsAppButton from '@/components/whatsapp-button'
+import { Footer } from '@/components/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -31,6 +32,7 @@ export default function RootLayout({
           <Header />
           {children}
           <WhatsAppButton />
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
