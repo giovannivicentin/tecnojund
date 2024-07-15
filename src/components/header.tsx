@@ -44,11 +44,6 @@ export function Header() {
               Chamados
             </li>
           </Link>
-          <Link href="/portfolio">
-            <li className="border-y border-transparent hover:border-b-primary hover:text-primary text-lg">
-              Portfólio
-            </li>
-          </Link>
           <Link href="/downloads">
             <li className="border-y border-transparent hover:border-b-primary hover:text-primary text-lg">
               Downloads
@@ -100,14 +95,6 @@ export function Header() {
                 onClick={handleNav}
               >
                 Chamados
-              </li>
-            </Link>
-            <Link href="/portfolio">
-              <li
-                className="text-2xl font-medium  hover:text-primary"
-                onClick={handleNav}
-              >
-                Portfólio
               </li>
             </Link>
             <Link href="/downloads">

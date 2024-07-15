@@ -7,25 +7,11 @@ export default function Downloads() {
         <h1 className="font-medium text-4xl text-center">Downloads</h1>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-sm md:max-w-3xl mb-24">
           <DownloadsItem
-            href="/downloads/team-viewer.exe"
-            name="Team Viewer"
-            imageSrc="/downloads-icons/team-viewer.svg"
-            hoverImageSrc="/downloads-icons/team-viewer-hover.svg"
-            imageAlt="logo of team viewer"
-          />
-          <DownloadsItem
             href="/downloads/netscan.zip"
             name="Netscan Digital"
             imageSrc="/downloads-icons/netscan.svg"
             hoverImageSrc="/downloads-icons/netscan-hover.svg"
             imageAlt="logo of netscan digital"
-          />
-          <DownloadsItem
-            href="/downloads/arduino-driver.zip"
-            name="Arduino Driver"
-            imageSrc="/downloads-icons/arduino.svg"
-            hoverImageSrc="/downloads-icons/arduino-hover.svg"
-            imageAlt="logo of arduino"
           />
           <DownloadsItem
             href="/downloads/winrar.exe"
@@ -47,13 +33,6 @@ export default function Downloads() {
             imageSrc="/downloads-icons/folder.svg"
             hoverImageSrc="/downloads-icons/folder-hover.svg"
             imageAlt="logo of folder size"
-          />
-          <DownloadsItem
-            href="/downloads/ln-bio.zip"
-            name="Biometria LN-Bio"
-            imageSrc="/downloads-icons/digital.svg"
-            hoverImageSrc="/downloads-icons/digital-hover.svg"
-            imageAlt="logo of ln-bio"
           />
           <DownloadsItem
             href="/downloads/computer-test.exe"
