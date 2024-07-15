@@ -20,12 +20,12 @@ export function Footer() {
             <div className="flex gap-2 items-center justify-start">
               <EnvelopeClosedIcon className="w-4 h-4" />
               <Link
-                href="mailto:chamado@tecnojund.com.br"
+                href="mailto:contato@tecnojund.com.br"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline hover:text-primary"
               >
-                chamado@tecnojund.com.br
+                contato@tecnojund.com.br
               </Link>
             </div>
           </div>
