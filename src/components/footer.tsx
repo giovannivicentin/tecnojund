@@ -2,22 +2,28 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Separator } from './ui/separator'
 import { EnvelopeClosedIcon } from '@radix-ui/react-icons'
-import { Button } from './ui/button'
 
 export function Footer() {
   return (
     <>
       <Separator />
-      <footer className="w-full bg-background dark:bg-background pt-2">
+      <footer className="w-full bg-background dark:bg-background pt-4">
         <div className="flex flex-col-reverse md:flex-row justify-evenly gap-8">
-          <div className="flex flex-col-reverse md:flex-col justify-start gap-4 md:gap-2 text-center items-center">
+          <div className="flex flex-col-reverse md:flex-col justify-center text-center items-center">
             <Image
               src="/header-logo.svg"
               alt="Logo Tecnojund"
-              width={100}
-              height={50}
+              width={180}
+              height={90}
             ></Image>
-            <div className="flex gap-2 items-center justify-start">
+            <div className="flex gap-2 items-center justify-center text-transparent">
+              <EnvelopeClosedIcon className="w-4 h-4 hidden" />
+              contato@tecnojund.com.br
+            </div>
+          </div>
+          <div className="flex flex-col text-center gap-2">
+            <h3 className="text-xl font-bold my-2 text-center">Fale Conosco</h3>
+            <div className="flex gap-2 items-center justify-center">
               <EnvelopeClosedIcon className="w-4 h-4" />
               <Link
                 href="mailto:contato@tecnojund.com.br"
@@ -28,12 +34,6 @@ export function Footer() {
                 contato@tecnojund.com.br
               </Link>
             </div>
-          </div>
-          <div className="flex flex-col text-center gap-2">
-            <h3 className="text-xl font-bold my-2 text-center">Fale Conosco</h3>
-            <Link href="/chamados">
-              <Button className="text-md rounded-full">Abra um Chamado</Button>
-            </Link>
           </div>
           <div className="flex flex-col text-center md:text-end">
             <h3 className="text-xl font-bold my-2">Horário de Funcionamento</h3>
