@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: 'Tecnojund',
     images: [
       {
-        url: '/website-preview.jpeg',
+        url: '/website-preview.png',
       },
     ],
   },
