@@ -94,7 +94,7 @@ export function TicketForm() {
           control={form.control}
           name="name"
           render={({ field }) => (
-            <FormItem>
+            <FormItem className="animate-fade-right delay-100">
               <FormLabel>Nome</FormLabel>
               <FormControl>
                 <Input placeholder="Digite seu nome..." {...field} />
@@ -110,7 +110,7 @@ export function TicketForm() {
           control={form.control}
           name="email"
           render={({ field }) => (
-            <FormItem>
+            <FormItem className="animate-fade-right delay-200">
               <FormLabel>E-mail</FormLabel>
               <FormControl>
                 <Input
@@ -130,7 +130,7 @@ export function TicketForm() {
           control={form.control}
           name="subject"
           render={({ field }) => (
-            <FormItem>
+            <FormItem className="animate-fade-right delay-300">
               <FormLabel>Assunto</FormLabel>
               <FormControl>
                 <Input placeholder="Digite o assunto..." {...field} />
@@ -146,7 +146,7 @@ export function TicketForm() {
           control={form.control}
           name="message"
           render={({ field }) => (
-            <FormItem>
+            <FormItem className="animate-fade-right delay-500">
               <FormLabel>Mensagem</FormLabel>
               <FormControl>
                 <Textarea placeholder="Digite sua mensagem..." {...field} />
@@ -158,7 +158,9 @@ export function TicketForm() {
             </FormItem>
           )}
         />
-        <Button type="submit">Enviar</Button>
+        <Button type="submit" className="animate-fade-right delay-700">
+          Enviar
+        </Button>
       </form>
       <Toaster />
     </Form>
