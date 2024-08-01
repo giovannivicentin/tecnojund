@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import type { ReactNode } from 'react'
 import { Inter } from 'next/font/google'
 import './globals.css'
@@ -29,7 +29,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-  viewport: 'width=device-width, initial-scale=1.0',
   category: 'Automação Residencial',
   keywords: [
     'automação residencial',
@@ -80,6 +79,11 @@ export const metadata: Metadata = {
     'automação empresarial',
     'automação de condomínios',
   ],
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1.0,
 }
 
 export default function RootLayout({
