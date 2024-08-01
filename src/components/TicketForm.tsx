@@ -17,7 +17,6 @@ import {
 } from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
 import { Textarea } from './ui/textarea'
-import { useState } from 'react'
 import { Toaster } from './ui/sonner'
 import { PassThrough } from 'stream'
 
@@ -41,11 +40,8 @@ export function TicketForm() {
     },
   })
 
-  const [ticketCode] = useState(() =>
-    Math.floor(100000 + Math.random() * 900000),
-  )
-
   async function onSubmit(values: z.infer<typeof formSchema>) {
+    const ticketCode = Math.floor(100000 + Math.random() * 900000)
     try {
       const enhancedSubject = `Chamado: ${ticketCode} - ${values.subject}`
       const response = await fetch('/api/send', {
