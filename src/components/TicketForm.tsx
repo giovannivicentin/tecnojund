@@ -2,8 +2,8 @@
 
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
-import { z } from 'zod'
 import { toast } from 'sonner'
+import { z } from 'zod'
 
 import { Button } from '@/components/ui/button'
 import {
@@ -16,9 +16,9 @@ import {
   FormMessage,
 } from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
-import { Textarea } from './ui/textarea'
-import { Toaster } from './ui/sonner'
 import { PassThrough } from 'stream'
+import { Toaster } from './ui/sonner'
+import { Textarea } from './ui/textarea'
 
 const formSchema = z.object({
   name: z.string().min(1, { message: 'O nome é obrigatório.' }),
@@ -41,7 +41,11 @@ export function TicketForm() {
   })
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    const ticketCode = Math.floor(100000 + Math.random() * 900000)
+    const timestamp = new Date().getTime()
+    const randomPart = Math.floor(100000 + Math.random() * 900000)
+    const uniquePart = (timestamp % 1000000).toString().padStart(6, '0')
+    const ticketCode = `${uniquePart.substring(0, 3)}${randomPart.toString().substring(3, 6)}`
+
     try {
       const enhancedSubject = `Chamado: ${ticketCode} - ${values.subject}`
       const response = await fetch('/api/send', {
@@ -154,7 +158,10 @@ export function TicketForm() {
             </FormItem>
           )}
         />
-        <Button type="submit" className="animate-fade-right delay-700">
+        <Button
+          type="submit"
+          className="animate-fade-right delay-700 text-white"
+        >
           Enviar
         </Button>
       </form>
