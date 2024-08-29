@@ -131,12 +131,15 @@ export function TicketForm() {
           name="subject"
           render={({ field }) => (
             <FormItem className="animate-fade-right delay-300">
-              <FormLabel>Assunto</FormLabel>
+              <FormLabel>Empresa/Condomínio</FormLabel>
               <FormControl>
-                <Input placeholder="Digite o assunto..." {...field} />
+                <Input
+                  placeholder="Digite o nome da empresa ou condomínio..."
+                  {...field}
+                />
               </FormControl>
               <FormDescription>
-                Escreva a razão principal para o contato.
+                Escreva o nome da empresa ou condomínio relacionado ao contato.
               </FormDescription>
               <FormMessage />
             </FormItem>
